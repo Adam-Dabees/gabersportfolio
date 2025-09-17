@@ -5,17 +5,10 @@ import {
   SiNextdotjs,
   SiFlask,
 } from "react-icons/si";
-import {
-  FramerMotionIcon,
-  ReactRouterDomIcon,
-  VitePwaIcon,
-} from "@/components/icons";
+import { ReactRouterDomIcon } from "@/components/icons";
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
 // Languages
-import HtmlSvg from "@/public/icons/html.svg";
-import CsssSvg from "@/public/icons/css.svg";
-import SassSvg from "@/public/icons/sass.svg";
 import JavascriptSvg from "@/public/icons/javascript.svg";
 import TypescriptSvg from "@/public/icons/typescript.svg";
 import PythonSvg from "@/public/icons/python.svg";
@@ -24,9 +17,6 @@ import PythonSvg from "@/public/icons/python.svg";
 import ReactjsSvg from "@/public/icons/reactjs.svg";
 import SolidjsSvg from "@/public/icons/solidjs.svg";
 import ReduxSvg from "@/public/icons/redux.svg";
-import TailwindcssSvg from "@/public/icons/tailwindcss.svg";
-import MuiSvg from "@/public/icons/mui.svg";
-import ViteSvg from "@/public/icons/vite.svg";
 
 // Backend
 import NodejsSvg from "@/public/icons/nodejs.svg";
@@ -43,114 +33,90 @@ import PostmanSvg from "@/public/icons/postman.svg";
 
 export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
   {
-    sectionName: "Languages",
+    sectionName: "Programming Languages",
     skills: [
       {
-        name: "HTML",
-        icon: HtmlSvg,
+        name: "Python",
+        icon: PythonSvg,
       },
       {
-        name: "CSS",
-        icon: CsssSvg,
+        name: "C++",
+        icon: TypescriptSvg,
       },
       {
-        name: "SASS",
-        icon: SassSvg,
+        name: "MATLAB",
+        icon: JavascriptSvg,
       },
       {
         name: "Javascript",
         icon: JavascriptSvg,
       },
-      {
-        name: "Typescript",
-        icon: TypescriptSvg,
-      },
-      {
-        name: "Python",
-        icon: PythonSvg,
-      },
     ],
   },
   {
-    sectionName: "Libraries and Frameworks",
+    sectionName: "Engineering Software",
     skills: [
       {
-        name: "Reactjs",
+        name: "SolidWorks",
         icon: ReactjsSvg,
       },
       {
-        name: "Nextjs",
+        name: "AutoCAD",
         icon: SiNextdotjs,
       },
       {
-        name: "Solidjs",
+        name: "ANSYS",
         icon: SolidjsSvg,
       },
       {
-        name: "React Router Dom",
+        name: "CATIA",
         icon: ReactRouterDomIcon,
       },
       {
-        name: "Redux",
+        name: "Fusion 360",
         icon: ReduxSvg,
-      },
-      {
-        name: "Tailwindcss",
-        icon: TailwindcssSvg,
-      },
-      {
-        name: "MUI",
-        icon: MuiSvg,
-      },
-      {
-        name: "Framer motion",
-        icon: FramerMotionIcon,
-      },
-      {
-        name: "Vite",
-        icon: ViteSvg,
-      },
-      {
-        name: "Vite PWA",
-        icon: VitePwaIcon,
       },
     ],
   },
   {
-    sectionName: "Backend",
+    sectionName: "Aerospace Engineering",
     skills: [
       {
-        name: "Nodejs",
+        name: "Aerodynamics",
         icon: NodejsSvg,
       },
       {
-        name: "Express",
+        name: "Flight Dynamics",
         icon: SiExpress,
       },
       {
-        name: "Socket.io",
+        name: "Control Systems",
         icon: SiSocketdotio,
       },
       {
-        name: "Flask",
+        name: "Materials Science",
         icon: SiFlask,
       },
     ],
   },
   {
-    sectionName: "Databases and ORMs",
+    sectionName: "Robotics & Mechanical",
     skills: [
       {
-        name: "MongoDB",
+        name: "Mechanical Design",
         icon: MongoDBSvg,
       },
       {
-        name: "Postgress",
+        name: "Robotics",
         icon: PostgressSvg,
       },
       {
-        name: "Prisma",
+        name: "3D Modeling",
         icon: SiPrisma,
+      },
+      {
+        name: "Prototyping",
+        icon: GitSvg,
       },
     ],
   },
@@ -162,15 +128,15 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: GitSvg,
       },
       {
-        name: "Docker",
+        name: "Arduino",
         icon: DockerSvg,
       },
       {
-        name: "AWS",
+        name: "Raspberry Pi",
         icon: AwsSvg,
       },
       {
-        name: "Postman",
+        name: "LabVIEW",
         icon: PostmanSvg,
       },
     ],

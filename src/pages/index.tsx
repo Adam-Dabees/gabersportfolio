@@ -13,18 +13,18 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Amit Chauhan | Software Developer"
-        description="Explore the professional portfolio of Amit Chauhan, a skilled Software Developer with 2 years of hands-on experience. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
+        title="Gaber Soltan | Aerospace Engineer"
+        description="Explore the professional portfolio of Gaber Soltan, a skilled Aerospace Engineer. Discover innovative projects, expertise in robotics and mechanical design, and a passion for creating innovative engineering solutions."
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: "Amit Chauhan - Software Developer",
+          title: "Gaber Soltan - Aerospace Engineer",
           description:
-            "Dive into the world of web development with Amit Chauhan. Discover a Software Developer with 2 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
+            "Dive into the world of aerospace engineering with Gaber Soltan. Discover an Aerospace Engineer with expertise in robotics and mechanical design, showcasing innovative projects and a commitment to engineering excellence.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Amit Chauhan - Portfolio Image",
+              alt: "Gaber Soltan - Portfolio Image",
             },
           ],
           siteName: siteMetadata.siteName,
@@ -37,7 +37,7 @@ export default function Home() {
           {
             property: "keywords",
             content:
-              "React Developer, Software Developer, Frontend Developer, Web Developer, JavaScript, HTML, CSS, Portfolio, UI/UX, React.js, Frontend Development, Web Development, JavaScript Developer, Responsive Design",
+              "Aerospace Engineer, Robotics Engineer, Mechanical Engineer, Engineering, Aerospace Design, Robotics, Portfolio, Mechanical Design, 3D Modeling, Prototyping, Control Systems, Engineering Innovation",
           },
         ]}
       />

@@ -29,7 +29,7 @@ export default function SkillsShowcase({ skills }: SkillsShowcaseProps) {
               <span className="text-xs font-semibold text-foreground sm:text-sm">
                 {section.sectionName}
               </span>
-              <div className="mt-2 flex flex-wrap gap-4 text-xl text-accent-foreground">
+              <div className="mt-2 flex flex-wrap gap-4 text-xl">
                 {section.skills.map((pill, index) => (
                   <FadeRight
                     key={`lang-${index}`}

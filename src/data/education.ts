@@ -2,36 +2,26 @@ import { type ExperienceShowcaseListItemProps } from "@/components/experience/ex
 
 export const EDUCATION: ExperienceShowcaseListItemProps[] = [
   {
-    title: "Bachelor Of Engineering in Electronics and Telecommunication",
+    title:
+      "Bachelor of Engineering - BE, Aerospace, Aeronautical and Astronautical Engineering",
     organisation: {
-      name: "Rizvi College Of Engineering",
-      href: "https://eng.rizvi.edu.in/",
+      name: "Toronto Metropolitan University",
+      href: "https://www.torontomu.ca/",
     },
-    date: "2019-2023",
-    location: "Bandra, Mumbai",
+    date: "2023 - 2027",
+    location: "Toronto, ON",
     description:
-      "Relevant courses included Data Structures and Algorithms, Web Design, Cloud Computing, Artificial Neural Network and Database Management.",
+      "Currently in 3rd year of Bachelor of Engineering program in Aerospace, Aeronautical and Astronautical Engineering. Relevant courses include Aerodynamics, Flight Dynamics, Aircraft Design, Control Systems, Materials Science, Thermodynamics, and Mechanical Engineering.",
   },
   {
-    title: "Higher Secondary School",
+    title: "High School Diploma",
     organisation: {
-      name: "Mithibai College",
-      href: "https://www.mithibai.ac.in/",
+      name: "Stephen Lewis Secondary School",
+      href: "#",
     },
-    date: "2016-2018",
-    location: "Vile Parle, Mumbai",
+    date: "2019 - 2023",
+    location: "Mississauga, ON",
     description:
-      "Completed the course in Electronics Bifocal Science with 68%. Started freelancing making 3D assets for games. Got interested in game development and learned unity and c#",
-  },
-  {
-    title: "Secondary School Education",
-    organisation: {
-      name: "Holy Family High School",
-      href: "https://holyfamilyandheri.org/",
-    },
-    date: "2017-2018",
-    location: "Andheri, Mumbai",
-    description:
-      "Learned good values,dedication and disciplne. Played district football for 5 years.",
+      "Graduated from Stephen Lewis Secondary School in 2023. Focused on mathematics, physics, and engineering sciences. Developed strong foundation in problem-solving and analytical thinking. Participated in science fairs and engineering competitions.",
   },
 ];

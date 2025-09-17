@@ -1,6 +1,6 @@
-# Portfolio
+# Gaber Soltan - Aerospace Engineer Portfolio
 
-This portfolio is crafted using [Next.js](https://nextjs.org/)
+This portfolio is crafted using [Next.js](https://nextjs.org/) for Gaber Soltan, an Aerospace Engineer specializing in robotics and mechanical design.
 
 ## 🖥️ Technologies Used
 

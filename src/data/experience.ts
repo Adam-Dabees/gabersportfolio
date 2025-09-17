@@ -2,35 +2,36 @@ import { type ExperienceShowcaseListItemProps } from "@/components/experience/ex
 
 export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
   {
-    title: "Software Developer",
+    title: "Aerospace Engineering Student",
     organisation: {
-      name: "Skima",
-      href: "https://skima.ai/",
+      name: "University",
+      href: "#",
     },
-    date: "Oct 2023 - Present",
-    location: "Mumbai",
-    description: "Reactjs and Nextjs app development",
+    date: "2020 - Present",
+    location: "University",
+    description:
+      "Studying aerospace engineering with focus on robotics, mechanical design, and aerospace systems. Working on innovative projects including walking robot development and design competitions.",
   },
   {
-    title: "Engineering Trainee",
+    title: "Junior Design Competition Participant",
     organisation: {
-      name: "Hexaware",
-      href: "https://hexaware.com/",
+      name: "Engineering Competition",
+      href: "#",
     },
-    date: "July 2023 - Sep 2023",
-    location: "Remote",
+    date: "2023 - 2024",
+    location: "Competition",
     description:
-      "Learned to work we monorepo and got to learn application architecture, scalling and build tooling to improve CI/CD of micro services.",
+      "Participated in junior design competition showcasing innovative engineering solutions and design thinking. Demonstrated expertise in mechanical design, problem-solving, and engineering innovation.",
   },
   {
-    title: "Frontend Developer Intern",
+    title: "Robotics Project Developer",
     organisation: {
-      name: "Master Infotech",
-      href: "https://masterinfotech.com/",
+      name: "Personal Projects",
+      href: "#",
     },
-    date: "Winter - 2022",
-    location: "Remote",
+    date: "2022 - Present",
+    location: "Project-based",
     description:
-      "Worked on a team responsible for developing new features and updating old codebases to latest technologies. Learned alot about web development and CI/CD development cycle.",
+      "Developed walking robot projects focusing on mechanical design, control systems, and innovative locomotion mechanisms. Gained hands-on experience in robotics engineering and mechanical systems.",
   },
 ];

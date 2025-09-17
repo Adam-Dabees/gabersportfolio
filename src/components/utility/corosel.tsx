@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { AnimatePresence, AnimationProps, motion, wrap } from "framer-motion";
 import { BiSolidLeftArrow } from "react-icons/bi";
+import Image from "next/image";
 
 import { classNames } from "@/utility/classNames";
 
@@ -48,12 +49,10 @@ export default function Corosel({ aspectRatio = 1, images }: CoroselProps) {
   return (
     <div className="relative w-full overflow-hidden" style={{ aspectRatio }}>
       <AnimatePresence initial={false} custom={direction}>
-        <motion.img
+        <motion.div
           key={page}
-          loading="lazy"
           className="h-full w-full bg-cover"
           style={{ aspectRatio }}
-          src={images[imageIndex]}
           custom={direction}
           variants={variant}
           initial="enter"
@@ -74,7 +73,28 @@ export default function Corosel({ aspectRatio = 1, images }: CoroselProps) {
               paginate(-1);
             }
           }}
-        ></motion.img>
+        >
+          {images[imageIndex].endsWith(".mov") ||
+          images[imageIndex].endsWith(".mp4") ? (
+            <video
+              className="h-full w-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src={images[imageIndex]} type="video/mp4" />
+            </video>
+          ) : (
+            <Image
+              fill
+              className="object-cover"
+              src={images[imageIndex]}
+              alt={`Project image ${imageIndex + 1}`}
+              unoptimized
+            />
+          )}
+        </motion.div>
       </AnimatePresence>
       <div className="absolute bottom-0 flex h-12 w-full items-center justify-center gap-2">
         <button

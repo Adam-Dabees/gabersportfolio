@@ -19,10 +19,10 @@ const DuotoneImage: React.FC<DuotoneImageProps> = ({
   lightColor = "#E0FFFF",
   darkColor = "#004D4D",
   contrastFactor = 1.2, // Default contrast enhancement
-  sharpnessFactor = 0.5, // Default sharpness
   ...props
 }) => {
   const [processedImageUrl, setProcessedImageUrl] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const canvas = document.createElement("canvas");
@@ -31,11 +31,14 @@ const DuotoneImage: React.FC<DuotoneImageProps> = ({
 
     img.crossOrigin = "anonymous";
     img.onload = () => {
-      canvas.width = img.width;
-      canvas.height = img.height;
+      // Limit canvas size for better performance
+      const maxSize = 400;
+      const scale = Math.min(maxSize / img.width, maxSize / img.height, 1);
+      canvas.width = img.width * scale;
+      canvas.height = img.height * scale;
 
       if (ctx) {
-        ctx.drawImage(img, 0, 0);
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
         const data = imageData.data;
@@ -44,66 +47,27 @@ const DuotoneImage: React.FC<DuotoneImageProps> = ({
         const dark = hexToRgb(darkColor);
 
         if (light && dark) {
-          // Process each pixel
-          for (let y = 0; y < canvas.height; y++) {
-            for (let x = 0; x < canvas.width; x++) {
-              const i = (y * canvas.width + x) * 4;
+          // Simplified processing for better performance
+          for (let i = 0; i < data.length; i += 4) {
+            // Calculate brightness
+            let brightness =
+              (data[i] * 0.299 + data[i + 1] * 0.587 + data[i + 2] * 0.114) /
+              255;
 
-              // Calculate brightness with increased contrast
-              let brightness =
-                (data[i] * 0.299 + data[i + 1] * 0.587 + data[i + 2] * 0.114) /
-                255;
+            // Apply contrast enhancement
+            brightness = (brightness - 0.5) * contrastFactor + 0.5;
+            brightness = Math.max(0, Math.min(1, brightness));
 
-              // Apply contrast enhancement
-              brightness = (brightness - 0.5) * contrastFactor + 0.5;
-              brightness = Math.max(0, Math.min(1, brightness));
-
-              // Apply sharpening by emphasizing differences from neighbors
-              if (
-                x > 0 &&
-                x < canvas.width - 1 &&
-                y > 0 &&
-                y < canvas.height - 1
-              ) {
-                const center = brightness;
-                const left =
-                  (data[i - 4] * 0.299 +
-                    data[i - 3] * 0.587 +
-                    data[i - 2] * 0.114) /
-                  255;
-                const right =
-                  (data[i + 4] * 0.299 +
-                    data[i + 3] * 0.587 +
-                    data[i + 2] * 0.114) /
-                  255;
-                const top =
-                  (data[i - canvas.width * 4] * 0.299 +
-                    data[i - canvas.width * 4 + 1] * 0.587 +
-                    data[i - canvas.width * 4 + 2] * 0.114) /
-                  255;
-                const bottom =
-                  (data[i + canvas.width * 4] * 0.299 +
-                    data[i + canvas.width * 4 + 1] * 0.587 +
-                    data[i + canvas.width * 4 + 2] * 0.114) /
-                  255;
-
-                const sharpenedBrightness =
-                  center +
-                  (center - (left + right + top + bottom) / 4) *
-                    sharpnessFactor;
-                brightness = Math.max(0, Math.min(1, sharpenedBrightness));
-              }
-
-              // Apply duotone colors with enhanced contrast
-              data[i] = Math.round(lerp(dark.r, light.r, brightness));
-              data[i + 1] = Math.round(lerp(dark.g, light.g, brightness));
-              data[i + 2] = Math.round(lerp(dark.b, light.b, brightness));
-            }
+            // Apply duotone colors
+            data[i] = Math.round(lerp(dark.r, light.r, brightness));
+            data[i + 1] = Math.round(lerp(dark.g, light.g, brightness));
+            data[i + 2] = Math.round(lerp(dark.b, light.b, brightness));
           }
         }
 
         ctx.putImageData(imageData, 0, 0);
-        setProcessedImageUrl(canvas.toDataURL("image/png"));
+        setProcessedImageUrl(canvas.toDataURL("image/jpeg", 0.8));
+        setIsLoading(false);
       }
     };
 
@@ -115,14 +79,7 @@ const DuotoneImage: React.FC<DuotoneImageProps> = ({
         URL.revokeObjectURL(processedImageUrl);
       }
     };
-  }, [
-    src,
-    lightColor,
-    darkColor,
-    contrastFactor,
-    sharpnessFactor,
-    processedImageUrl,
-  ]);
+  }, [src, lightColor, darkColor, contrastFactor, processedImageUrl]);
 
   const hexToRgb = (hex: string) => {
     const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -138,6 +95,17 @@ const DuotoneImage: React.FC<DuotoneImageProps> = ({
   const lerp = (start: number, end: number, amount: number): number => {
     return start * (1 - amount) + end * amount;
   };
+
+  if (isLoading) {
+    return (
+      <div
+        className={`${className} flex animate-pulse items-center justify-center bg-muted`}
+        style={{ width: width, height: height }}
+      >
+        <span className="text-sm text-muted-foreground">Loading...</span>
+      </div>
+    );
+  }
 
   if (!processedImageUrl) {
     return null;

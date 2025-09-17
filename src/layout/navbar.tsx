@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
 import MenuLogo from "@/components/utility/menu-button";
-import ThemeSwitch from "@/components/utility/theme-switch";
 import AnimatedLogo from "@/animation/animated-logo";
 import MobileMenu from "@/components/utility/mobile-menu";
 import { classNames } from "@/utility/classNames";
@@ -38,11 +37,11 @@ export default function Navbar(props: NavbarProps) {
           className="drop-shadow-teralight flex items-center justify-center"
           aria-label="Return to home page"
         >
-          <div className="relative h-12 w-12 sm:h-14 sm:w-14">
+          <div className="sm:h-18 sm:w-18 relative h-16 w-16">
             <AnimatedLogo />
           </div>
         </Link>
-        <nav className="hidden items-center gap-2 rounded-full px-2 py-2 shadow-md ring-1 ring-zinc-200 backdrop-blur-md dark:ring-accent/50 md:flex">
+        <nav className="hidden items-center gap-2 rounded-full px-2 py-2 shadow-md ring-1 ring-zinc-200 backdrop-blur-md md:flex">
           <ul className="flex gap-2 text-sm font-medium">
             {props.routes.map((_link, index) => {
               return (
@@ -54,7 +53,7 @@ export default function Navbar(props: NavbarProps) {
                     href={_link.href}
                     className={classNames(
                       pathName === _link.href
-                        ? "font-semibold text-background dark:hover:text-foreground"
+                        ? "font-semibold text-background"
                         : "text-foreground",
                       "group relative mx-3 rounded-full px-3 py-2 transition-colors duration-200",
                     )}
@@ -80,7 +79,6 @@ export default function Navbar(props: NavbarProps) {
               );
             })}
           </ul>
-          <ThemeSwitch />
         </nav>
         <AnimatePresence>
           <MenuLogo open={isModalOpen} toggle={toggleModal} />

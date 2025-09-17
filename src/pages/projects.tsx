@@ -8,18 +8,18 @@ export default function Projects() {
   return (
     <>
       <NextSeo
-        title="Projects by Amit Chauhan - Software Developer Portfolio"
-        description="Explore a collection of projects by Amit Chauhan, a seasoned Software Developer. From innovative web applications to responsive interfaces, discover the depth and diversity of my work."
+        title="Projects by Gaber Soltan - Aerospace Engineer Portfolio"
+        description="Explore a collection of projects by Gaber Soltan, a skilled Aerospace Engineer. From innovative robotics projects to engineering design competitions, discover the depth and diversity of my work."
         canonical={`${siteMetadata.siteUrl}/projects`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/projects`,
-          title: "Discover Projects by Amit Chauhan - Software Developer",
+          title: "Discover Projects by Gaber Soltan - Aerospace Engineer",
           description:
-            "Explore a showcase of projects crafted by Amit Chauhan, a Software Developer. Witness the fusion of creativity and technology in web development.",
+            "Explore a showcase of projects crafted by Gaber Soltan, an Aerospace Engineer. Witness the fusion of creativity and technology in aerospace engineering and robotics.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Amit Chauhan - Portfolio Image",
+              alt: "Gaber Soltan - Portfolio Image",
             },
           ],
           siteName: siteMetadata.siteName,
@@ -32,7 +32,7 @@ export default function Projects() {
           {
             property: "keywords",
             content:
-              "Projects,Amit Portfolio, Software Developer, React Developer, Frontend Developer, Web Development, JavaScript, HTML, CSS, UI/UX, Web Applications, Responsive Design",
+              "Projects,Gaber Portfolio, Aerospace Engineer, Robotics Engineer, Mechanical Engineer, Engineering, Aerospace Design, Robotics, Mechanical Design, 3D Modeling, Prototyping",
           },
         ]}
       />
@@ -53,17 +53,17 @@ export default function Projects() {
           </div>
           <div className="mx-auto mt-16 max-w-5xl text-center text-foreground md:mt-28">
             <span className="text-xl font-bold md:text-2xl">
-              I am currently building new projects and learning backend
-              development to expand my skill set beyond frontend.
+              I am currently working on new engineering projects and expanding
+              my expertise in advanced robotics and aerospace systems.
             </span>
             <p className="mt-10 text-base md:text-xl">
-              Visit my github to see some of the latest projects{" "}
+              Visit my LinkedIn to see more about my engineering journey{" "}
               <a
-                href={`${siteMetadata.github}?tab=repositories`}
+                href={siteMetadata.linkedin}
                 target="_blank"
                 className="font-semibold text-accent underline underline-offset-2 hover:text-accent/70"
               >
-                Github
+                LinkedIn
               </a>
             </p>
           </div>
