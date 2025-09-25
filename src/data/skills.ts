@@ -15,8 +15,6 @@ import PythonSvg from "@/public/icons/python.svg";
 
 // Libraries
 import ReactjsSvg from "@/public/icons/reactjs.svg";
-import SolidjsSvg from "@/public/icons/solidjs.svg";
-import ReduxSvg from "@/public/icons/redux.svg";
 
 // Backend
 import NodejsSvg from "@/public/icons/nodejs.svg";
@@ -27,9 +25,6 @@ import PostgressSvg from "@/public/icons/postgresql.svg";
 
 // Tools and Tech
 import GitSvg from "@/public/icons/git.svg";
-import DockerSvg from "@/public/icons/docker.svg";
-import AwsSvg from "@/public/icons/aws.svg";
-import PostmanSvg from "@/public/icons/postman.svg";
 
 export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
   {
@@ -65,16 +60,8 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
         icon: SiNextdotjs,
       },
       {
-        name: "ANSYS",
-        icon: SolidjsSvg,
-      },
-      {
         name: "CATIA",
         icon: ReactRouterDomIcon,
-      },
-      {
-        name: "Fusion 360",
-        icon: ReduxSvg,
       },
     ],
   },
@@ -117,27 +104,6 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       {
         name: "Prototyping",
         icon: GitSvg,
-      },
-    ],
-  },
-  {
-    sectionName: "Tools and Technologies",
-    skills: [
-      {
-        name: "Git",
-        icon: GitSvg,
-      },
-      {
-        name: "Arduino",
-        icon: DockerSvg,
-      },
-      {
-        name: "Raspberry Pi",
-        icon: AwsSvg,
-      },
-      {
-        name: "LabVIEW",
-        icon: PostmanSvg,
       },
     ],
   },

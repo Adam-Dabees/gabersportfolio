@@ -27,6 +27,16 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
       DARK: "/IMG_29401.jpg",
     },
   },
+  {
+    index: 2,
+    title: "Flight Simulator",
+    href: "/projects",
+    tags: ["Aerospace Engineering", "Flight Dynamics", "Simulation", "AER404"],
+    image: {
+      LIGHT: "/flight simulator cockpit view from door light.avif",
+      DARK: "/flight simulator cockpit view from door light.avif",
+    },
+  },
 ];
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
@@ -45,5 +55,13 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "Participation in a junior design competition highlighting innovative engineering solutions and design thinking. This project showcases problem-solving skills, mechanical design expertise, and engineering innovation in a competitive environment.",
     liveWebsiteHref: "/Junior Design Competition  (2).pdf",
+  },
+  {
+    name: "Flight Simulator",
+    favicon: "/logo-dark.png",
+    imageUrl: ["/flight simulator cockpit view from door light.avif"],
+    description:
+      "A comprehensive flight simulator project for AER404 course, focusing on flight dynamics, aircraft systems, and pilot training simulation. This project demonstrates understanding of aerospace engineering principles, flight mechanics, and simulation technology in aviation education.",
+    liveWebsiteHref: "/AER404 Flight Simulator  (1).pdf",
   },
 ];

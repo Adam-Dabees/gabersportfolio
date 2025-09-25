@@ -33,10 +33,11 @@ export default function AboutHero() {
           </FadeUp>
           <FadeUp key="description-1" duration={0.6} delay={0.2}>
             <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-              I turn engineering concepts into innovative aerospace solutions.
-              Whether I&apos;m working on robotic systems or aerospace design
-              projects, I bring my commitment to engineering excellence and
-              precision to every project I work on.
+              I&apos;m a passionate aerospace engineering student with expertise
+              in mechanical design, 3D modeling, and robotics. I specialize in
+              using SolidWorks, AutoCAD, and CATIA for engineering projects,
+              while applying my programming skills in Python, C++, and MATLAB to
+              solve complex engineering challenges.
             </p>
           </FadeUp>
           <FadeUp key="description-2" duration={0.6} delay={0.4}>
@@ -45,8 +46,9 @@ export default function AboutHero() {
               <Link href="/projects" className="underline underline-offset-4">
                 <span className="text-accent">projects</span>
               </Link>{" "}
-              showcasing my expertise in aerospace engineering, robotics,
-              mechanical design and engineering innovation.
+              showcasing my work in robotics, mechanical design, and aerospace
+              engineering projects that demonstrate my growing expertise in the
+              field.
             </p>
           </FadeUp>
           <FadeRight
