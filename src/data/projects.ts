@@ -8,8 +8,8 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
     href: "/projects",
     tags: ["Composites", "Structural Sizing", "Flight Test", "Team Lead"],
     image: {
-      LIGHT: "/glider.jpg",
-      DARK: "/glider.jpg",
+      LIGHT: "/glider-final.jpg",
+      DARK: "/glider-final.jpg",
     },
   },
   {
@@ -39,16 +39,15 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     name: "Hand-Launched Composite Glider",
     favicon: "/logo-dark.png",
     imageUrl: [
-      "/glider.jpg",
+      "/glider-final.jpg",
       "/glider-flight.mp4",
       "/glider-team.jpg",
       "/glider-wing-sanding.mp4",
       "/glider-wing-trimming.mp4",
-      "/glider-cad.jpg",
     ],
     description:
       "Led a four-person team through design, layup, and flight test of a hand-launched glider built to a 175 g mass limit while carrying a 200 g payload, a 0.533 payload fraction. Sized a 29.5 in span, 4 in chord NACA M22 composite wing at 54.9 g from a 3g cantilever model with 1.221 MPa peak bending stress, and trimmed CG to 25 to 33 percent chord using repositionable ballast for repeatable 15 m plus glides. Presented the design, load case, and flight test results to faculty and cohort at end of term.",
-    liveWebsiteHref: "/composite-glider-report.pdf",
+    liveWebsiteHref: "/composite-glider-summary.pdf",
   },
   {
     name: "Stress Analysis of an Aircraft Structural Component",
@@ -60,7 +59,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     ],
     description:
       "Modelled a bonded inverted T-stringer (stainless 304 plate with Al 6061-T6 and Al 7075-T6 stringers) in ANSYS APDL under a parabolic tensile load, applied node by node. Ran static and modal analyses across two load orientations, three mesh densities, and SOLID185 versus SOLID186 elements. Design 1 converged to within 0.6 percent on peak von Mises stress, after the coarse mesh had overpredicted it by 42 percent. Design 2 jumped 71 percent at the fine mesh, exposing a fixed-edge stress concentration that the coarser meshes had missed.",
-    liveWebsiteHref: "/stress-analysis-report.pdf",
+    liveWebsiteHref: "/stress-analysis-summary.pdf",
   },
   {
     name: "Walking Robot",
