@@ -1,0 +1,22 @@
+export const siteMetadata = {
+  title: "Gaber Soltan | Aerospace Engineering",
+  author: "Gaber Soltan",
+  headerTitle: "Gaber Soltan",
+  description:
+    "Fourth-year Aerospace Engineering student at Toronto Metropolitan University. Composite structures, FEA, and design for manufacture.",
+  language: "en-us",
+  theme: "light",
+  siteName: "gabersportfolio.vercel.app",
+  siteUrl: "https://gabersportfolio.vercel.app",
+  siteRepo: "https://github.com/Adam-Dabees/gabersportfolio",
+  siteLogo: "/logo-dark.png",
+  image: "/static/homepage.png",
+  twitterImage: "/static/homepage.png",
+  socialBanner: "/static/homepage.png",
+  email: "gabersoltan6@gmail.com",
+  github: "",
+  twitter: "",
+  linkedin: "https://www.linkedin.com/in/gaber-soltan-6010b4350",
+  locale: "en-US",
+  googleSiteVerification: "",
+};
