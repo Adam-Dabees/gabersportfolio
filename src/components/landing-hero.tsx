@@ -42,27 +42,27 @@ export default function LandingHero() {
                 Gaber Soltan
               </h1>
               <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
-                Aerospace Engineer
+                Aerospace Engineering Student
               </span>
             </FadeUp>
             <FadeUp key="description" duration={0.6} delay={0.2}>
               <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
-                I am an aerospace engineer specializing in innovative
-                engineering solutions and robotic systems. Skilled in{" "}
+                Fourth-year Aerospace Engineering student at Toronto
+                Metropolitan University. I work on{" "}
                 <span className="font-semibold text-accent">
-                  Mechanical Design
+                  composite structures
                 </span>
-                , <span className="font-semibold text-accent">Robotics</span>,{" "}
+                ,{" "}
                 <span className="font-semibold text-accent">
-                  Control Systems
+                  finite element analysis
                 </span>
-                , and an expert in{" "}
+                , and{" "}
                 <span className="font-semibold text-accent">
-                  Aerospace Engineering
+                  design for manufacture
                 </span>
-                , <span className="font-semibold text-accent">3D Modeling</span>{" "}
-                and{" "}
-                <span className="font-semibold text-accent">Prototyping</span>
+                , taking parts from a load case through{" "}
+                <span className="font-semibold text-accent">layup</span> to{" "}
+                <span className="font-semibold text-accent">flight test</span>.
               </div>
             </FadeUp>
           </AnimatePresence>

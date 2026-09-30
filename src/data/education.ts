@@ -2,16 +2,15 @@ import { type ExperienceShowcaseListItemProps } from "@/components/experience/ex
 
 export const EDUCATION: ExperienceShowcaseListItemProps[] = [
   {
-    title:
-      "Bachelor of Engineering - BE, Aerospace, Aeronautical and Astronautical Engineering",
+    title: "B.Eng. Aerospace Engineering",
     organisation: {
       name: "Toronto Metropolitan University",
       href: "https://www.torontomu.ca/",
     },
-    date: "2023 - 2027",
+    date: "2023 - 2028",
     location: "Toronto, ON",
     description:
-      "Currently in 3rd year of Bachelor of Engineering program in Aerospace, Aeronautical and Astronautical Engineering. Relevant courses include Aerodynamics, Flight Dynamics, Aircraft Design, Control Systems, Materials Science, Thermodynamics, and Mechanical Engineering.",
+      "Entering fourth year. Recipient of the Engineering Award of Academic Excellence scholarship. Coursework includes Aerodynamics, Aircraft Performance, Flight Mechanics, Aerospace Structural Design, Gas Dynamics, Stress Analysis, Thermodynamics and Heat Transfer, Fluid Mechanics, and Numerical Analysis.",
   },
   {
     title: "High School Diploma",
@@ -22,6 +21,6 @@ export const EDUCATION: ExperienceShowcaseListItemProps[] = [
     date: "2019 - 2023",
     location: "Mississauga, ON",
     description:
-      "Graduated from Stephen Lewis Secondary School in 2023. Focused on mathematics, physics, and engineering sciences. Developed strong foundation in problem-solving and analytical thinking. Participated in science fairs and engineering competitions.",
+      "Focused on mathematics and physics. Participated in science fairs and engineering competitions.",
   },
 ];

@@ -2,36 +2,36 @@ import { type ExperienceShowcaseListItemProps } from "@/components/experience/ex
 
 export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
   {
-    title: "Aerospace Engineering Student",
+    title: "Undergraduate Research Assistant, MIMS Lab",
     organisation: {
-      name: "University",
-      href: "#",
+      name: "Toronto Metropolitan University",
+      href: "https://www.torontomu.ca/",
     },
-    date: "2020 - Present",
-    location: "University",
+    date: "Sep 2026 - Present",
+    location: "Toronto, ON",
     description:
-      "Studying aerospace engineering with focus on robotics, mechanical design, and aerospace systems. Working on innovative projects including walking robot development and design competitions.",
+      "Calibrating Haply Inverse3 force-feedback hardware in support of a graduate researcher's haptics development work, and validating position and force output across the device workspace to confirm repeatable haptic rendering. Trained on the lab's fixed-base flight simulator with PhD researchers, operating a replica Airbus throttle quadrant, engine start, autobrake, and rudder controls.",
   },
   {
-    title: "Junior Design Competition Participant",
+    title: "Payload Design & Manufacturing, Met Rocketry",
     organisation: {
-      name: "Engineering Competition",
-      href: "#",
+      name: "Toronto Metropolitan University",
+      href: "https://www.torontomu.ca/",
     },
-    date: "2023 - 2024",
-    location: "Competition",
+    date: "Dec 2023 - Present",
+    location: "Toronto, ON",
     description:
-      "Participated in junior design competition showcasing innovative engineering solutions and design thinking. Demonstrated expertise in mechanical design, problem-solving, and engineering innovation.",
+      "Produced production-ready CAD in SolidWorks and CATIA V5 for moulds, jigs, and fixtures across five airframe component families. Laid up and vacuum-bagged carbon and glass-fibre components to specified cure cycles and wall-thickness tolerances. Sized structural fasteners with FEA in ANSYS, cutting the count from 12 to 9, and presented the margin analysis to the build team to get the change approved. Coordinated with the structures and manufacturing sub-teams to align payload interfaces and build sequence, resolving fit issues before layup.",
   },
   {
-    title: "Robotics Project Developer",
+    title: "Automotive Service Technician",
     organisation: {
-      name: "Personal Projects",
+      name: "Safe Ride Motors Inc.",
       href: "#",
     },
-    date: "2022 - Present",
-    location: "Project-based",
+    date: "Feb 2025 - Sep 2025",
+    location: "Scarborough, ON",
     description:
-      "Developed walking robot projects focusing on mechanical design, control systems, and innovative locomotion mechanisms. Gained hands-on experience in robotics engineering and mechanical systems.",
+      "Diagnosed electrical and mechanical faults on roughly 50 vehicles per week using OBD-II scanners and oscilloscopes, and explained findings and repair options to customers before work began. Disassembled and reassembled engine and ignition subsystems to manufacturer torque and clearance specifications. Completed a full transmission replacement on an Audi Q5, coordinating removal, fitment, and post-install verification.",
   },
 ];

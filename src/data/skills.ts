@@ -1,110 +1,60 @@
 import {
-  SiExpress,
-  SiSocketdotio,
-  SiPrisma,
-  SiNextdotjs,
-  SiFlask,
+  SiAnsys,
+  SiAutodesk,
+  SiBlender,
+  SiCplusplus,
+  SiDassaultsystemes,
 } from "react-icons/si";
-import { ReactRouterDomIcon } from "@/components/icons";
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
-// Languages
-import JavascriptSvg from "@/public/icons/javascript.svg";
-import TypescriptSvg from "@/public/icons/typescript.svg";
 import PythonSvg from "@/public/icons/python.svg";
-
-// Libraries
-import ReactjsSvg from "@/public/icons/reactjs.svg";
-
-// Backend
-import NodejsSvg from "@/public/icons/nodejs.svg";
-
-// Database and ORMS
-import MongoDBSvg from "@/public/icons/mongodb.svg";
-import PostgressSvg from "@/public/icons/postgresql.svg";
-
-// Tools and Tech
-import GitSvg from "@/public/icons/git.svg";
 
 export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
   {
-    sectionName: "Programming Languages",
+    sectionName: "CAD & Design",
     skills: [
-      {
-        name: "Python",
-        icon: PythonSvg,
-      },
-      {
-        name: "C++",
-        icon: TypescriptSvg,
-      },
-      {
-        name: "MATLAB",
-        icon: JavascriptSvg,
-      },
-      {
-        name: "Javascript",
-        icon: JavascriptSvg,
-      },
+      { name: "SolidWorks", icon: SiDassaultsystemes },
+      { name: "CATIA V5", icon: SiDassaultsystemes },
+      { name: "AutoCAD", icon: SiAutodesk },
+      { name: "Onshape" },
+      { name: "Blender", icon: SiBlender },
+      { name: "GD&T" },
+      { name: "Tolerance Stack-Up" },
+      { name: "Design for Manufacture" },
+      { name: "Detail Drawings & BOMs" },
     ],
   },
   {
-    sectionName: "Engineering Software",
+    sectionName: "Analysis & Simulation",
     skills: [
-      {
-        name: "SolidWorks",
-        icon: ReactjsSvg,
-      },
-      {
-        name: "AutoCAD",
-        icon: SiNextdotjs,
-      },
-      {
-        name: "CATIA",
-        icon: ReactRouterDomIcon,
-      },
+      { name: "ANSYS APDL", icon: SiAnsys },
+      { name: "Finite Element Analysis" },
+      { name: "Simulink" },
+      { name: "XFOIL" },
+      { name: "MotionGen" },
     ],
   },
   {
-    sectionName: "Aerospace Engineering",
+    sectionName: "Manufacturing",
     skills: [
-      {
-        name: "Aerodynamics",
-        icon: NodejsSvg,
-      },
-      {
-        name: "Flight Dynamics",
-        icon: SiExpress,
-      },
-      {
-        name: "Control Systems",
-        icon: SiSocketdotio,
-      },
-      {
-        name: "Materials Science",
-        icon: SiFlask,
-      },
+      { name: "Composite Wet Layup" },
+      { name: "Vacuum Bagging" },
+      { name: "Mould Design" },
+      { name: "Jig & Fixture Design" },
+      { name: "In-Process Inspection" },
+      { name: "CNC Machining" },
+      { name: "3D Printing" },
+      { name: "Laser Cutting" },
     ],
   },
   {
-    sectionName: "Robotics & Mechanical",
+    sectionName: "Programming & Tools",
     skills: [
-      {
-        name: "Mechanical Design",
-        icon: MongoDBSvg,
-      },
-      {
-        name: "Robotics",
-        icon: PostgressSvg,
-      },
-      {
-        name: "3D Modeling",
-        icon: SiPrisma,
-      },
-      {
-        name: "Prototyping",
-        icon: GitSvg,
-      },
+      { name: "Python", icon: PythonSvg },
+      { name: "MATLAB" },
+      { name: "C", icon: SiCplusplus },
+      { name: "Excel (VBA / Macros)" },
+      { name: "MS Office" },
     ],
   },
 ];

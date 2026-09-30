@@ -33,11 +33,12 @@ export default function AboutHero() {
           </FadeUp>
           <FadeUp key="description-1" duration={0.6} delay={0.2}>
             <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-              I&apos;m a passionate aerospace engineering student with expertise
-              in mechanical design, 3D modeling, and robotics. I specialize in
-              using SolidWorks, AutoCAD, and CATIA for engineering projects,
-              while applying my programming skills in Python, C++, and MATLAB to
-              solve complex engineering challenges.
+              I&apos;m in my fourth year of Aerospace Engineering at Toronto
+              Metropolitan University. Most of my hands-on work has been in
+              composites and structures: producing CAD in SolidWorks and CATIA
+              V5 for moulds, jigs and fixtures on my university&apos;s rocketry
+              team, laying up and vacuum-bagging carbon and glass fibre, and
+              sizing structural parts with FEA in ANSYS.
             </p>
           </FadeUp>
           <FadeUp key="description-2" duration={0.6} delay={0.4}>
@@ -45,10 +46,10 @@ export default function AboutHero() {
               Explore my latest{" "}
               <Link href="/projects" className="underline underline-offset-4">
                 <span className="text-accent">projects</span>
-              </Link>{" "}
-              showcasing my work in robotics, mechanical design, and aerospace
-              engineering projects that demonstrate my growing expertise in the
-              field.
+              </Link>
+              , including a composite glider taken from load case to flight test
+              under a 175 g mass limit, and an ANSYS mesh convergence study that
+              exposed a stress concentration the coarser meshes had missed.
             </p>
           </FadeUp>
           <FadeRight
@@ -58,7 +59,7 @@ export default function AboutHero() {
             className="mr-0 mt-8 flex items-center justify-center gap-4 lg:mr-8 lg:justify-end"
           >
             <span className="text-lg font-medium text-foreground">
-              Aerospace Engineer
+              Aerospace Engineering Student
             </span>
           </FadeRight>
         </AnimatePresence>
