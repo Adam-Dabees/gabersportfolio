@@ -38,23 +38,34 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
   {
     name: "Hand-Launched Composite Glider",
     favicon: "/logo-dark.png",
-    imageUrl: ["/glider.jpg"],
+    imageUrl: [
+      "/glider.jpg",
+      "/glider-flight.mp4",
+      "/glider-team.jpg",
+      "/glider-wing-sanding.mp4",
+      "/glider-wing-trimming.mp4",
+      "/glider-cad.jpg",
+    ],
     description:
       "Led a four-person team through design, layup, and flight test of a hand-launched glider built to a 175 g mass limit while carrying a 200 g payload, a 0.533 payload fraction. Sized a 29.5 in span, 4 in chord NACA M22 composite wing at 54.9 g from a 3g cantilever model with 1.221 MPa peak bending stress, and trimmed CG to 25 to 33 percent chord using repositionable ballast for repeatable 15 m plus glides. Presented the design, load case, and flight test results to faculty and cohort at end of term.",
-    liveWebsiteHref: "/Composite Glider Report.pdf",
+    liveWebsiteHref: "/composite-glider-report.pdf",
   },
   {
     name: "Stress Analysis of an Aircraft Structural Component",
     favicon: "/logo-dark.png",
-    imageUrl: ["/stress-analysis.jpg"],
+    imageUrl: [
+      "/stress-analysis.jpg",
+      "/stress-analysis-mesh.jpg",
+      "/stress-analysis-displacement.jpg",
+    ],
     description:
-      "Modelled a three-metal bonded aircraft part under load in ANSYS APDL. Ran a three-level mesh convergence study that held variation under 0.6 percent between levels and exposed a stress concentration the coarser meshes had missed. The first result looked acceptable and was wrong, which is the point of the study.",
-    liveWebsiteHref: "/Stress Analysis Report.pdf",
+      "Modelled a bonded inverted T-stringer (stainless 304 plate with Al 6061-T6 and Al 7075-T6 stringers) in ANSYS APDL under a parabolic tensile load, applied node by node. Ran static and modal analyses across two load orientations, three mesh densities, and SOLID185 versus SOLID186 elements. Design 1 converged to within 0.6 percent on peak von Mises stress, after the coarse mesh had overpredicted it by 42 percent. Design 2 jumped 71 percent at the fine mesh, exposing a fixed-edge stress concentration that the coarser meshes had missed.",
+    liveWebsiteHref: "/stress-analysis-report.pdf",
   },
   {
     name: "Walking Robot",
     favicon: "/logo-dark.png",
-    imageUrl: ["/355F5540-466D-4245-BC2B-D4DA85EC34C1.mov", "/IMG_7893.jpg"],
+    imageUrl: ["/walking-robot.mp4", "/IMG_7893.jpg"],
     description:
       "Led a four-person team to a first-place finish in the cohort. Tested five leg configurations in simulation before redesigning the joints, then built and tuned the final mechanism for stable gait.",
     liveWebsiteHref: "/Walking Robot (4).pdf",
