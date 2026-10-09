@@ -48,21 +48,20 @@ export default function LandingHero() {
             <FadeUp key="description" duration={0.6} delay={0.2}>
               <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
                 Fourth-year Aerospace Engineering student at Toronto
-                Metropolitan University. I work on{" "}
+                Metropolitan University. I work where analysis meets hardware,
+                building{" "}
                 <span className="font-semibold text-accent">
-                  composite structures
-                </span>
-                ,{" "}
+                  flight dynamics models
+                </span>{" "}
+                and{" "}
                 <span className="font-semibold text-accent">
-                  finite element analysis
-                </span>
-                , and{" "}
+                  haptic devices
+                </span>{" "}
+                in the{" "}
                 <span className="font-semibold text-accent">
-                  design for manufacture
+                  Mixed-reality Immersive Motion Simulation lab
                 </span>
-                , taking parts from a load case through{" "}
-                <span className="font-semibold text-accent">layup</span> to{" "}
-                <span className="font-semibold text-accent">flight test</span>.
+                .
               </div>
             </FadeUp>
           </AnimatePresence>
