@@ -77,7 +77,9 @@ export default function Corosel({ aspectRatio = 1, images }: CoroselProps) {
           {images[imageIndex].endsWith(".mov") ||
           images[imageIndex].endsWith(".mp4") ? (
             <video
-              className="h-full w-full object-cover"
+              className={`h-full w-full object-cover ${
+                images[imageIndex].includes("walking-robot") ? "rotate-180" : ""
+              }`}
               autoPlay
               loop
               muted
